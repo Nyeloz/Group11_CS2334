@@ -6,14 +6,11 @@ public class Driver {
 	public static void main(String[] args) {
 	
 
-		int testData1 = 5000; // 5k
-		int testData2 = 10000; // 10k
-		int testData3 = 30000; // 5k
-		int testData4 = 50000; // 5k
-		int testData5 = 70000; // 5k
-		int testData6 = 100000; // 5k
-		
-		int[] testSizes = {testData1, testData2, testData3, testData4, testData5, testData6};
+		// Factorial tests for recursion and iteration
+		int[] testSizes = {5000, 10000, 30000, 50000, 70000, 100000};
+		Factorial.recFactorialTest(testSizes);
+		System.out.println();
+		Factorial.itrFactorialTest(testSizes);
 
 	
 		//Arrays with values of capacity in each index
