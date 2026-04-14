@@ -95,5 +95,6 @@ public class Factorial {
 				break; // Stop testing iteration once it fails
 			}
 		}
+	
 	}
-
+}

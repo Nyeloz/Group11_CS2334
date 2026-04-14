@@ -22,5 +22,9 @@ public class FastExponential {
         }
         return result;
     }
+    
+    
+    
+}
 
     

@@ -8,10 +8,11 @@ public class Driver {
 
 		// Factorial tests for recursion and iteration
 		int[] testSizes = {5000, 10000, 30000, 50000, 70000, 100000};
+		System.out.println("Factorial testing");
+		System.out.println("--------------------");
 		Factorial.recFactorialTest(testSizes);
 		System.out.println();
 		Factorial.itrFactorialTest(testSizes);
-
 	
 		//Arrays with values of capacity in each index
 		int[] testDataArr1 = new int[5000];
@@ -47,6 +48,14 @@ public class Driver {
 		//arrays of filled out arrays
 		int[][] testArrays = {testDataArr1, testDataArr2, testDataArr3, testDataArr4, testDataArr5, testDataArr6};
 
+		System.out.println();
+		System.out.println("Testing binary search");
+		System.out.println("--------------------");
+		
+		Binary.itrBinaryTest(testArrays);
+		System.out.println();
+		
+		Binary.recBinaryTest(testArrays);
 
 
 
