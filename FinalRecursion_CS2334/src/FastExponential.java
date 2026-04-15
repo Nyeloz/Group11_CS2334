@@ -91,12 +91,5 @@ public class FastExponential {
     }
 
     
-    public static void main(String[] args) {
-
-        int[] sizes = {5000, 10000, 30000, 50000, 70000, 100000};
-        int[] exponents = {5, 10, 20, 30};
-
-        factorialTest(sizes);
-        fastExpTest(exponents);
-    }
+ 
 }

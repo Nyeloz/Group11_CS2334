@@ -6,6 +6,7 @@ public class Driver {
 	public static void main(String[] args) {
 	
 
+		
 		// Factorial tests for recursion and iteration
 		int[] testSizes = {5000, 10000, 30000, 50000, 70000, 100000};
 		System.out.println("Factorial testing");
@@ -56,6 +57,11 @@ public class Driver {
 		System.out.println();
 		
 		Binary.recBinaryTest(testArrays);
+		
+		System.out.println();
+		
+		FastExponential.fastExpTest(new int[] {5, 10, 20, 30});
+		FastExponential.factorialTest(testSizes);
 
 
 
