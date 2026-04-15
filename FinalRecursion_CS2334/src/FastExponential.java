@@ -1,8 +1,4 @@
-import java.math.BigInteger;
-
 public class FastExponential {
-
-
 
     public static double fastExpRecursive(double x, long n) {
         if (n == 0) return 1;
@@ -35,42 +31,12 @@ public class FastExponential {
         return result;
     }
 
-    
+    public static void fastExpTest(double base, int[] sizes) {
 
-    public static BigInteger factIteration(int n) {
-        BigInteger result = BigInteger.ONE;
-
-        for (int i = 2; i <= n; i++) {
-            result = result.multiply(BigInteger.valueOf(i));
-        }
-
-        return result;
-    }
-
-    
-
-    public static void factorialTest(int[] sizes) {
-        System.out.println("Factorial Iteration Test");
+        System.out.println("Fast Exponential Testing");
         System.out.println("------------------------");
 
         for (int n : sizes) {
-            long start = System.nanoTime();
-
-            factIteration(n);
-
-            long end = System.nanoTime();
-
-            System.out.println("n = " + n + " | Time: " + (end - start) + " ns");
-        }
-    }
-
-    public static void fastExpTest(int[] exponents) {
-        double base = 5000;
-
-        System.out.println("\nFast Exponential Test");
-        System.out.println("------------------------");
-
-        for (int n : exponents) {
 
             long startItr = System.nanoTime();
             double itrResult = fastExpIterative(base, n);
@@ -84,12 +50,20 @@ public class FastExponential {
             System.out.println("Iterative Time: " + (endItr - startItr) + " ns");
             System.out.println("Recursive Time: " + (endRec - startRec) + " ns");
 
-            
-            System.out.println("Results match: " + (itrResult == recResult));
+            System.out.println("Match: " +
+                (Math.abs(itrResult - recResult) < 1e-9));
+
             System.out.println();
         }
     }
 
-    
- 
+   
+    public static void main(String[] args) {
+
+        int[] sizes = {5000, 10000, 30000, 50000, 70000, 100000};
+
+        double base = 1.0001;
+
+        fastExpTest(base, sizes);
+    }
 }
