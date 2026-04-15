@@ -60,10 +60,6 @@ public class FastExponential {
    
     public static void main(String[] args) {
 
-        int[] sizes = {5000, 10000, 30000, 50000, 70000, 100000};
-
-        double base = 1.0001;
-
-        fastExpTest(base, sizes);
+      
     }
 }
