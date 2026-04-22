@@ -11,7 +11,7 @@ public class Driver {
 		int[] testSizes = {5000, 10000, 30000, 50000, 70000, 100000};
 		
 		double base = 1.0001;
-        FastExponential.fastExpTest(base, testSizes);
+       // FastExponential.fastExpTest(base, testSizes);
 
 		
 		System.out.println("Factorial testing");
@@ -19,7 +19,7 @@ public class Driver {
 		Factorial.recFactorialTest(testSizes);
 		System.out.println();
 		Factorial.itrFactorialTest(testSizes);
-	
+		
 		//Arrays with values of capacity in each index
 		int[] testDataArr1 = new int[5000];
 		int[] testDataArr2 = new int[10000];
@@ -67,8 +67,11 @@ public class Driver {
 		
 		
 		
+		Fibonacci.fibTestingItr(new int[] {5, 10, 30, 50, 70, 100});
+		Fibonacci.fibTestingRec(new int[] {5, 10, 30, 50, 70, 100});
 
 
 
 	}
 }
+
